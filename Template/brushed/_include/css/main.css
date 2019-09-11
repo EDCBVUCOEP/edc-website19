@@ -682,6 +682,43 @@ nav#menu #menu-nav li a:hover {
 .work-nav #filters li a.selected {
 	color: #DE5E60;
 }
+.typewriter-events {
+	font-family: monospace;
+	display: inline-block;
+}
+
+.typewriter-events-text {
+    display: inline-block;
+  	overflow: hidden;
+  	letter-spacing: 2px;
+ 	animation: typing 5s steps(30, end), blink .75s step-end infinite;
+    white-space: nowrap;
+	font-size: 20px;
+	color: #0F8B8D;
+    font-weight: 700;
+	border-right: 4px solid #FFFFFF;
+
+    box-sizing: border-box;
+}
+
+@keyframes typing {
+    from { 
+        width: 0% 
+    }
+    to { 
+        width: 100% 
+    }
+}
+
+@keyframes blink {
+    from, to { 
+        border-color: transparent 
+    }
+    50% { 
+        border-color: #FFFFFF ; 
+    }
+}
+
 
 #thumbs {
 	margin: 0;
