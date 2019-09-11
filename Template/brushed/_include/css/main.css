@@ -315,10 +315,16 @@ h3.spec {
 }
 
 #home-slider .slide-content {
-	font-size: 60px;
-	color: #FFFFFF;
-	letter-spacing: -3px;
+	font-size: 35px;
+	color: #FFB;
+	letter-spacing: 1px;
 	text-transform: uppercase;	
+    
+}
+@media screen and (max-width: 600px) {
+#home-slider .slide-content {
+    font-size: 20px;
+  }
 }
 
 #home-slider .control-nav {
