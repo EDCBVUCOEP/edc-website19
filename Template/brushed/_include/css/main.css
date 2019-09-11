@@ -1013,6 +1013,11 @@ nav#menu #menu-nav li a:hover {
 
 #social-area {
     text-align: center;
+	background: #2F3238;
+	height: 80px;
+	padding: 20px 0;
+	position: relative;
+
 }
 
 #social-area #social ul {
@@ -1031,10 +1036,14 @@ nav#menu #menu-nav li a:hover {
 	margin-left: 0;
 }
 
+#qq{
+	font-size: 50px;
+}
+
 #social ul li a {
 	display: block;
-	width: 70px;
-	height: 70px;
+	width: 60px;
+	height: 60px;
 
 	background: #26292E;
 	
@@ -1043,11 +1052,11 @@ nav#menu #menu-nav li a:hover {
 		 -o-transition: all 400ms ease-out 0s;
 		    transition: all 400ms ease-out 0s;
 	
-	-webkit-transform: rotateY(180deg);
+	/* -webkit-transform: rotateY(180deg);
 	   -moz-transform: rotateY(180deg);
 		-ms-transform: rotateY(180deg);
 		 -o-transform: rotateY(180deg);
-			transform: rotateY(180deg);
+			transform: rotateY(180deg); */
 }
 
 #social ul li a span {
