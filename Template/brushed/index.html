@@ -59,12 +59,15 @@
 <link rel="apple-touch-icon" sizes="72x72" href="#">
 <link rel="apple-touch-icon" sizes="144x144" href="#">
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css" rel="stylesheet"/>
+
 <!-- Modernizr -->
 <script src="_include/js/modernizr.js"></script>
 
 <!-- Analytics -->
-<script type="text/javascript">
 
+<script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'Insert Your Code']);
   _gaq.push(['_trackPageview']);
@@ -81,13 +84,11 @@
 </head>
 
 
-<body>
+<body onload="loaded()">
 
 <!-- This section is for Splash Screen -->
-<div class="ole">
-<section id="jSplash">
-	<div id="circle"></div>
-</section>
+<div id="loading">
+
 </div>
 <!-- End of Splash Screen -->
 
@@ -376,6 +377,27 @@
 </div>
 </div>
 <!-- End About Section -->
+<div class="row">
+    <div class="span12">
+        <div class="title-page">
+            <h2 class="title">Sponsers</h2>
+        </div>
+    </div>
+</div>
+
+
+<div id="owl-demo">
+                  
+    <div class="item"><img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg" alt="Owl Image"></div>
+    <div class="item"><img src="grey.png" alt="Owl Image"></div>
+    <div class="item"><img src="grey.png" alt="Owl Image"></div>
+    <div class="item"><img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg" alt="Owl Image"></div>
+    <div class="item"><img src="grey.png" alt="Owl Image"></div>
+    <div class="item"><img src="grey.png" alt="Owl Image"></div>
+    <div class="item"><img src="grey.png" alt="Owl Image"></div>
+  </div>
+  
+</div>
 
 
 <!-- Contact Section -->
@@ -505,7 +527,37 @@
 <script src="_include/js/jquery.tweet.js"></script> <!-- Tweet -->
 <script src="_include/js/plugins.js"></script> <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
 <script src="_include/js/main.js"></script> <!-- Default JS -->
+<script>
+
+    var preloader = document.getElementById('loading');
+
+    var loadLeft = true;
+
+    // window.onload = function() {
+    //     while(loadLeft){
+    //         setTimeout(function(){ alert("party"); }, 1000); 
+    //     }
+    // };
+
+    function loaded(){
+        setTimeout(function(){ preloader.style.backgroundImage = "url('mid.png')"; }, 1000);
+        setTimeout(function(){ preloader.style.backgroundImage = "url('grey.png')"; }, 1500);
+        setTimeout(function(){ preloader.style.backgroundImage = "url('mid.png')"; }, 2000);
+        setTimeout(function(){ preloader.style.backgroundImage = "url('grey.png')"; }, 2100);
+        setTimeout(function(){ preloader.style.backgroundImage = "url('mid.png')"; }, 2200);
+        setTimeout(function(){ preloader.style.backgroundImage = "url('grey.png')"; }, 2700);
+        setTimeout(function(){ preloader.style.backgroundImage = "url('mid.png')"; }, 3000);
+        setTimeout(function(){ preloader.style.backgroundImage = "url('grey.png')"; }, 3500);
+        setTimeout(function(){ preloader.style.backgroundImage = "url('glow.png')"; }, 4000);
+        setTimeout(function(){ preloader.style.display = 'none'; }, 5000); 
+    }
+
+
+
+</script>
 <!-- End Js -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js"></script>
 
 </body>
 </html>

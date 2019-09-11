@@ -420,15 +420,6 @@ $(document).ready(function(){
 	]);
 	
 	// Preload the page with jPreLoader
-	$('body').jpreLoader({
-		splashID: "#jSplash",
-		showSplash: true,
-		showPercentage: true,
-		autoClose: true,
-		splashFunction: function() {
-			$('#circle').delay(250).animate({'opacity' : 1}, 500, 'linear');
-		}
-	});
 	
 	BRUSHED.nav();
 	BRUSHED.mobileNav();
@@ -452,3 +443,17 @@ $(window).resize(function(){
 });
 
 });
+
+$(document).ready(function() {
+     
+    $("#owl-demo").owlCarousel({
+   
+        autoPlay: 3000, //Set AutoPlay to 3 seconds
+   
+        items : 4,
+        itemsDesktop : [1199,3],
+        itemsDesktopSmall : [979,3]
+   
+    });
+   
+  });
