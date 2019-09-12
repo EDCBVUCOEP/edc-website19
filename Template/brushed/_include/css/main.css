@@ -497,7 +497,7 @@ header #logo {
 }
 
 header #logo a {
-	background: url(../img/logo.png) no-repeat;
+	background: url(../img/logo_@2x.png) no-repeat;
 	width: 96px;
 	height: 30px;
 	text-indent: -9999px;
@@ -1256,6 +1256,6 @@ footer .credits {
   }
 
   .item{
-	  width: 15vw;
+	  width: 100%;
 	  height: auto;
   }

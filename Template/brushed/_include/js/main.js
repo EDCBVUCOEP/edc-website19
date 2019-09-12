@@ -53,8 +53,8 @@ BRUSHED.slider = function(){
 		autoplay				:	1,			// Slideshow starts playing automatically
 		start_slide             :   0,			// Start slide (0 is random)
 		stop_loop				:	0,			// Pauses slideshow on last slide
-		random					: 	1,			// Randomize slide order (Ignores start slide)
-		slide_interval          :   2000,		// Length between transitions
+		random					: 	0,			// Randomize slide order (Ignores start slide)
+		slide_interval          :   1000,		// Length between transitions
 		transition              :   3, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
 		transition_speed		:	500,		// Speed of transition
 		new_window				:	1,			// Image links open in new window/tab
@@ -77,10 +77,13 @@ BRUSHED.slider = function(){
 		thumb_links				:	0,			// Individual thumb links for each slide
 		thumbnail_navigation    :   0,			// Thumbnail navigation
 		slides 					:  	[			// Slideshow Images
-											{image : '_include/img/slider-images/image01.jpg', title : '<div class="slide-content">Entrepreneurship Development Cell</div>', thumb : '', url : ''},
-											{image : '_include/img/slider-images/image02.jpg', title : '<div class="slide-content">Entrepreneurship Development Cell</div>', thumb : '', url : ''},
-											{image : '_include/img/slider-images/image03.jpg', title : '<div class="slide-content">Entrepreneurship Development Cell</div>', thumb : '', url : ''},
-											{image : '_include/img/slider-images/image04.jpg', title : '<div class="slide-content">Entrepreneurship Development Cell</div>', thumb : '', url : ''}  
+												{image : '_include/img/slider-images/image01.jpg', title : '<div class="slide-content">We</div><span> “I think it is possible for ordinary people to choose to be extraordinary.” </span>', thumb : '', url : ''},
+            
+											{image : '_include/img/slider-images/image02.jpg', title : '<div class="slide-content"> Are</div> <span>"I want to put a ding in the universe."</span>', thumb : '', url : ''},
+            
+											{image : '_include/img/slider-images/image03.jpg', title : '<div class="slide-content">The</div><span>भविष्य का अनुमान लगाने का सबसे सही तरीका है उसे बनाना</span>', thumb : '', url : ''},
+            
+											{image : '_include/img/slider-images/image04.jpg', title : '<div class="slide-content">Entrepreneur</div><span> Take the stones people throw at you. And use them to build a monument</span>', thumb : '', url : ''}
 									],
 									
 		// Theme Options			   
@@ -450,7 +453,7 @@ $(document).ready(function() {
    
         autoPlay: 3000, //Set AutoPlay to 3 seconds
    
-        items : 4,
+        items : 5,
         itemsDesktop : [1199,3],
         itemsDesktopSmall : [979,3]
    
