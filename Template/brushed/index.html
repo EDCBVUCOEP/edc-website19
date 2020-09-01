@@ -8,6 +8,7 @@
 
 <!-- Meta Tags -->
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="theme-color" content="#232527"/>
 
 <title>Welcome to Entrepreneurship Development Cell</title>   
 
@@ -441,25 +442,28 @@
 
     var loadLeft = true;
 
-    // window.onload = function() {
-    //     while(loadLeft){
-    //         setTimeout(function(){ alert("party"); }, 1000); 
-    //     }
-    // };
 
-    function loaded(){
-        setTimeout(function(){ preloader.style.backgroundImage = "url('mid.png')"; }, 1000);
-        setTimeout(function(){ preloader.style.backgroundImage = "url('grey.png')"; }, 1500);
-        setTimeout(function(){ preloader.style.backgroundImage = "url('mid.png')"; }, 2000);
-        setTimeout(function(){ preloader.style.backgroundImage = "url('grey.png')"; }, 2100);
-        setTimeout(function(){ preloader.style.backgroundImage = "url('mid.png')"; }, 2200);
-        setTimeout(function(){ preloader.style.backgroundImage = "url('grey.png')"; }, 2700);
-        setTimeout(function(){ preloader.style.backgroundImage = "url('mid.png')"; }, 3000);
-        setTimeout(function(){ preloader.style.backgroundImage = "url('grey.png')"; }, 3500);
-        setTimeout(function(){ preloader.style.backgroundImage = "url('glow.png')"; }, 4000);
-        setTimeout(function(){ preloader.style.display = 'none'; }, 5000); 
+
+    // This function is exicuted before page is loaded
+    function preloadFunc()
+    {
+        // To set the loader backgroung image before the page starts loading
+        setTimeout(function(){ preloader.style.backgroundImage = "url('loading.png')"; }, 10);
+        document.body.style.overflow = 'hidden';
     }
 
+    window.onpaint = preloadFunc();
+
+    // To set the loader backgroung image after the page starts loading
+    function loaded(){
+        setTimeout(function(){ preloader.style.backgroundImage = "url('glow.png')"; }, 2000);
+        setTimeout(function()
+        { 
+            preloader.style.display = 'none'; 
+            document.body.style.overflow = 'visible';
+        }, 
+        4000);
+    }
 
 
 </script>
